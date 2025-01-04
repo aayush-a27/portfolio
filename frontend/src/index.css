@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  /* src/index.css */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+padding: 0;
+}
+
+  body {
+ font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  cursor: url('../src/assets/color-mustard-yellow-pack-arrow.png'), auto;
+  /* cursor: url('../src/assets/pointerCursor-removebg-preview.png'), pointer; */
+}
