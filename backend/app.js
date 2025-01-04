@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;  // Default port if not found in .env
 
 // Middleware
 app.use(cors());
@@ -16,17 +17,17 @@ app.post("/send-email", async (req, res) => {
 
   // Configure your email transporter
   const transporter = nodemailer.createTransport({
-    service: "gmail", // You can use other services like Yahoo, Outlook, etc.
+    service: "gmail", 
     auth: {
-      user: "aayushbhadula567@gmail.com", // Replace with your email
-      pass: "xhfq gxkk hnad qsjy", // Replace with your email password or app password
+      user: "aayushbhadula567@gmail.com", 
+      pass: "xhfq gxkk hnad qsjy", 
     },
   });
 
   // Email options
   const mailOptions = {
-    from: email, // Sender's email
-    to: "aayushbhadula567@gmail.com", // Your email where the form data will be sent
+    from: email, 
+    to: "aayushbhadula567@gmail.com", 
     subject: `New Contact Form Submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
