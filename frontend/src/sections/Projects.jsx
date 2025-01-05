@@ -10,16 +10,16 @@ const Projects = () => {
       title: "Syncpro",
       description:
         "A meeting management web app that enables users to schedule, join, record, and summarize meetings effortlessly.",
-      link: "#",
-      demo: "#",
+      link: "https://sync-pro.vercel.app/",
+      demo: "https://github.com/aayush-a27/Sync-Pro",
       imgSrc: project2Img,
     },
     {
       title: "Vastra",
       description:
         "An e-commerce clothing web app where users can explore a wide range of clothing options, select sizes and quantities, and enjoy seamless shopping.",
-      link: "#",
-      demo: "#",
+      link: "https://vastra-e-commerce-site.vercel.app/",
+      demo: "https://github.com/aayush-a27/Vastra-E-commerce-site",
       imgSrc: project1Img,
     },
     {
@@ -27,7 +27,7 @@ const Projects = () => {
       description:
         "A dynamic web app for booking movie tickets, allowing users to explore nearby theaters, check real-time show timings, and book seats seamlessly.",
       link: "#",
-      demo: "#",
+      demo: "https://github.com/aayush-a27/E-ticketing",
       imgSrc: project3Img,
     },
   ];
@@ -86,7 +86,7 @@ const Projects = () => {
                 target="__blank"
                 className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-700 dark:bg-yellow-400 text-yellow-400 dark:text-gray-900 text-xs font-bold hover:bg-yellow-300"
               >
-                <FaPlay /> Demo
+                <FaPlay /> Code
               </CardItem>
             </div>
           </CardBody>
